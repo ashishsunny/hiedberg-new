@@ -18,36 +18,36 @@ import {
 
 const comps = [
   {
-    title: 'Alert Dialog',
+    title: 'hideberg sub 1',
     href: '/docs/primitives/alert-dialog',
     description:
       'A modal dialog that interrupts the user with important content and expects a response.',
   },
   {
-    title: 'Hover Card',
+    title: 'hideberg sub 2',
     href: '/docs/primitives/hover-card',
     description:
       'For sighted users to preview content available behind a link.',
   },
   {
-    title: 'Progress',
+    title: 'hideberg sub 3',
     href: '/docs/primitives/progress',
     description:
       'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
   },
   {
-    title: 'Scroll-area',
+    title: 'hideberg sub 4',
     href: '/docs/primitives/scroll-area',
     description: 'Visually or semantically separates content.',
   },
   {
-    title: 'Tabs',
+    title: 'Thideberg sub 5',
     href: '/docs/primitives/tabs',
     description:
       'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
   },
   {
-    title: 'Tooltip',
+    title: 'hideberg sub 6',
     href: '/docs/primitives/tooltip',
     description:
       'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
@@ -69,11 +69,10 @@ export function Items() {
                     href="/"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      hideberg
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                      Welocme to Hideberg landing
                     </p>
                   </a>
                 </NavigationMenuLink>
@@ -85,7 +84,7 @@ export function Items() {
           <NavigationMenuTrigger>About</NavigationMenuTrigger>
           <NavigationMenuContent className='bg-white'>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              <li>hesoyam</li>
+              <li>hideberg sub 1</li>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -103,7 +102,6 @@ export function Items() {
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

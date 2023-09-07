@@ -18,7 +18,7 @@ const Card = ({ id, title, description, text }) => {
         },
       }}
       className="relative mb-3
-       h-196 w-80 shrink-0 overflow-hidden rounded-xl bg-[#c8b6ff] p-8"
+       h-196 w-80 shrink-0 overflow-hidden rounded-xl bg-[#7070F5] p-8"
     >
       <div className="relative z-10 text-[#001d3d]">
         {id === 1 ? (<DiGoogleAnalytics className="text-[1.5rem]" />)
