@@ -1,7 +1,7 @@
 const Data = [
   {
     id: 1,
-    title: 'ANALYTICS',
+    title: 'Analytics',
     description: 'Expert data analytics and business insights',
     text: `We are passionate about better data analytics and business insights, helping organisations in the private and public sectors make smarter decisions. 
     Our goal is to contribute to developments by adopting best statistical practices using cutting edge AI technologies to meet national, regional, and international needs of our clients in a sustainable way. We offer tailor-made solutions, mobilising our experts to meet customer needs and building trustworthy partnerships. 
@@ -9,7 +9,7 @@ const Data = [
   },
   {
     id: 2,
-    title: 'CONSULTING',
+    title: 'Consulting',
     description: 'Agile project management consulting',
     text: `Our multi-disciplinary team has strong technical expertise in business processes and interventions that produce the best impact.
     We draw on our expert capabilities in a range of evaluation designs for enterprise development and adopt a participatory approach to project implementation with the active involvement of our clients. 
@@ -17,7 +17,7 @@ const Data = [
   },
   {
     id: 3,
-    title: 'DEVELOPMENT',
+    title: 'Development',
     description: 'International expertise in global development',
     text: 'Providing technological solutions that are reliable, scalable, \
   and sustainable to attain organisational objectives for those \

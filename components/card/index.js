@@ -18,9 +18,9 @@ const Card = ({ id, title, description, text }) => {
         },
       }}
       className="relative mb-3
-       h-196 w-80 shrink-0 overflow-hidden rounded-xl bg-[#7070F5] p-8"
+       h-196 w-80 shrink-0 overflow-hidden rounded-xl bg-[#1F3E76] p-8"
     >
-      <div className="relative z-10 text-[#001d3d]">
+      <div className="relative z-10 text-[#f8f9fa]">
         {id === 1 ? (<DiGoogleAnalytics className="text-[1.5rem]" />)
         : id === 2 ? (<LuMonitor className="text-[1.5rem]" />)
         : id === 3 ? (<AiFillBuild className="text-[1.5rem]" />)
@@ -40,9 +40,9 @@ const Card = ({ id, title, description, text }) => {
         >
           {title}
           <br />
-          <p className="text-xl">{description.toUpperCase()}</p>
+          <p className="text-sm">{description.toUpperCase()}</p>
         </motion.span>
-        <p className="text-lg">{text}</p>
+        <p className="text-md">{text}</p>
       </div>
       <Background />
     </motion.div>
@@ -83,7 +83,7 @@ const Background = () => {
         cx="160.5"
         cy="114.5"
         r="101.5"
-        fill="#2ec4b6"
+        fill="#26447A"
       />
       <motion.ellipse
         variants={{
@@ -101,7 +101,7 @@ const Background = () => {
         cy="265.5"
         rx="101.5"
         ry="43.5"
-        fill="#2ec4b6"
+        fill="#26447A"
       />
     </motion.svg>
   )

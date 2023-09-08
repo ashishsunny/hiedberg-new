@@ -1,85 +1,34 @@
 /** @jsxImportSource theme-ui */
-import { FaPlayCircle } from 'react-icons/fa';
-import LinkA from '../components/link';
-import ModalVideo from 'react-modal-video'
 import { useState } from 'react';
 import { jsx, Container, Image, Flex, Box, Heading, Text, Button } from 'theme-ui';
 import { ThemeUIProvider } from 'theme-ui';
-import theme from '@/theme';
+import theme from '../../theme';
+import Phone from '../../components/phone'
 
-const BannerThumb = 'http://localhost:3000/assets/banner-thumb.png';
-const data = [
-  {
-    id: 1,
-    path: '#',
-    image: 'http://localhost:3000/assets/sponsor/dropbox.svg',
-    title: 'paypal',
-  },
-  {
-    id: 2,
-    path: '#',
-    image:'http://localhost:3000/assets/sponsor/google.svg',
-    title: 'google',
-  },
-  {
-    id: 3,
-    path: '#',
-    image:'http://localhost:3000/assets/sponsor/paypal.svg',
-    title: 'dropbox',
-  },
-];
 
-export default function Home() {
-  const [videoOpen, setVideoOpen] = useState(false);
-  const handleClick = (e) => {
-    e.preventDefault();
-    setVideoOpen(true);
-  };
+export default function Hero2() {
   return (
     <ThemeUIProvider theme={theme}>
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Experience your ultimate mobile application
+            Innovative ideas deserve a chance to reach their potential
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+            Our commitment to providing the best possible service and delivering measurable results means that we work closely with our clients to understand their unique organisational goals, and tailor our analysis and insights to meet those needs.
           </Text>
           <Flex>
             <Button variant="whiteButton" aria-label="Get Started">
-              Get Started
+              Contact Us
             </Button>
             <>
-              <ModalVideo
-                channel="youtube"
-                isOpen={videoOpen}
-                videoId="ZNA9rmDsYVE"
-                onClose={() => setVideoOpen(false)}
-              />
-              <Button
-                variant="textButton"
-                aria-label="Watch Video"
-                onClick={handleClick}
-              >
-                <FaPlayCircle /> Watch Video
-              </Button>
             </>
-          </Flex>
-          <Flex sx={styles.sponsorBox}>
-            <Text sx={styles.sponsorTitle}>Sponsored by:</Text>
-            <Box sx={styles.sponsorBox.sponsor}>
-              {data.map((item, index) => (
-                    <Image src={item.image} alt={item.title} />
-              ))}
-            </Box>
           </Flex>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerThumb} alt="banner" />
+          <Phone/>
         </Box>
       </Container>
     </section>

@@ -5,7 +5,7 @@ import VideoPlayer from '../../components/video-player'
 
 const Projects = () => {
   return (
-    <div className="bg-neutral-800">
+    <div className="bg-[#1F3E76]">
       <div className="flex h-48 items-center justify-center">
         <span className="font-normal text-5xl" style={{color: "#f8f9fa"}}>
           Our Projects

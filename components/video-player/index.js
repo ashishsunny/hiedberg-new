@@ -39,7 +39,7 @@ const VideoPlayer = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative" style={{marginBottom:"40rem"}}>
       <video
         ref={videoRef}
         className="w-full"

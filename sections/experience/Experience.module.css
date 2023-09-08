@@ -16,7 +16,7 @@
   .experience_heading{
     margin-bottom: 3rem;
     font-size: 3rem;
-    color: #353535;
+    color: #000;
   }
   @media (max_width: 768px) {
     .card-container {
