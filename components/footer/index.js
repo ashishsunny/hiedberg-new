@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
-import { jsx, Heading, Box, Container, Text } from 'theme-ui';
+import { jsx, Heading, Box, Container } from 'theme-ui';
 import  {LinkA}  from '../../components/link';
+import Link from 'next/link';
 import menuItems from './footer.data';
 import { ThemeUIProvider } from 'theme-ui';
 import theme from '../../theme';
@@ -27,12 +28,9 @@ export default function Footer() {
           ))}
         </Box>
       </Container>
-      <Text sx={styles.footer.copyright}>
-        All right reserved - Design & Developed by
-        <LinkA path="https://redq.io/" target="_blank">
-          RedQ, Inc
-        </LinkA>
-      </Text>
+      <div style={{textAlign:"center"}}>
+        <Link href="https://ashishsunny.dev/"> Developed by ashishsunny.dev</Link>
+      </div>
     </footer>
     </ThemeUIProvider>
   );
@@ -85,22 +83,5 @@ const styles = {
         mb: '0px',
       },
     },
-    copyright: {
-        fontSize: ['14px', null, 1],
-        width: '100%',
-        textAlign: 'center',
-        p: ['20px 20px'],
-        backgroundColor: '#FCFDFE',
-        color: 'text',
-        a: {
-          textDecoration: 'none',
-          color: 'inherit',
-          pl: 1,
-          transition: 'all 0.25s',
-          '&:hover': {
-            color: 'primary',
-          },
-        },
-      },
   },
 };

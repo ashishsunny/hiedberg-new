@@ -1,7 +1,6 @@
 .experience_container {
     text-align: center;
     padding: 40px;
-    background-color: "#262626";
   }
 
   .card_container {
@@ -16,7 +15,7 @@
   .experience_heading{
     margin-bottom: 3rem;
     font-size: 3rem;
-    color: #000;
+    color: #171717;
   }
   @media (max_width: 768px) {
     .card-container {

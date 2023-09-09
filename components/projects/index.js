@@ -12,9 +12,9 @@ const Projects = () => {
         </span>
       </div>
       <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center">
-          <VideoPlayer/>
-      </div>
+      {/* <div className="flex h-48 items-center justify-center">
+        
+      </div> */}
     </div>
   );
 };

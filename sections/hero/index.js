@@ -1,39 +1,52 @@
 /** @jsxImportSource theme-ui */
-import { useState } from 'react';
-import { jsx, Container, Image, Flex, Box, Heading, Text, Button } from 'theme-ui';
-import { ThemeUIProvider } from 'theme-ui';
-import theme from '../../theme';
+import { useState } from 'react'
+import {
+  jsx,
+  Container,
+  Image,
+  Flex,
+  Box,
+  Heading,
+  Text,
+  Button,
+} from 'theme-ui'
+import { ThemeUIProvider } from 'theme-ui'
+import theme from '../../theme'
 import Phone from '../../components/phone'
+import TypewriterComponent from '../../components/typewriter'
 
 
 export default function Hero2() {
   return (
     <ThemeUIProvider theme={theme}>
-    <section sx={styles.banner} id="home">
-      <Container sx={styles.banner.container}>
-        <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
-            Innovative ideas deserve a chance to reach their potential
-          </Heading>
-          <Text as="p" variant="heroSecondary">
-            Our commitment to providing the best possible service and delivering measurable results means that we work closely with our clients to understand their unique organisational goals, and tailor our analysis and insights to meet those needs.
-          </Text>
-          <Flex>
-            <Button variant="whiteButton" aria-label="Get Started">
-              Contact Us
-            </Button>
-            <>
-            </>
-          </Flex>
-        </Box>
+      <section sx={styles.banner} id="home">
+        <Container sx={styles.banner.container}>
+          <Box sx={styles.banner.contentBox}>
+            <Heading as="h1" variant="heroPrimary">
+            <TypewriterComponent text="Innovative ideas deserve a chance to reach their potential" />
+            </Heading>
 
-        <Box sx={styles.banner.imageBox}>
-          <Phone/>
-        </Box>
-      </Container>
-    </section>
+            <Text as="p" variant="heroSecondary">
+              Our commitment to providing the best possible service and
+              delivering measurable results means that we work closely with our
+              clients to understand their unique organisational goals, and
+              tailor our analysis and insights to meet those needs.
+            </Text>
+            <Flex>
+              <Button variant="whiteButton" aria-label="Get Started">
+                Contact Us
+              </Button>
+              <></>
+            </Flex>
+          </Box>
+
+          <Box sx={styles.banner.imageBox}>
+            <Phone />
+          </Box>
+        </Container>
+      </section>
     </ThemeUIProvider>
-  );
+  )
 }
 
 const styles = {
@@ -93,4 +106,4 @@ const styles = {
       },
     },
   },
-};
+}

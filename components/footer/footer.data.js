@@ -1,99 +1,119 @@
 export default [
     {
-      header: 'About Us',
+      header: 'Subsidiary',
       items: [
         {
           path: '/',
-          label: 'Support Center',
+          label: 'Hiedberg Consultants',
         },
         {
           path: '/',
-          label: 'Customer Support',
+          label: 'Hiedberg Remote Workforce',
         },
         {
           path: '/',
-          label: 'About Us',
+          label: 'Hiedberg Data Analytics',
         },
         {
           path: '/',
-          label: 'Copyright',
+          label: 'Hiedberg Business Insights',
         },
         {
           path: '/',
-          label: 'Popular Campaign',
+          label: 'Hiedberg Research',
         },
       ],
     },
     {
-      header: 'Our Information',
+      header: 'Subsidiary',
       items: [
         {
           path: '/',
-          label: 'Return Policy ',
+          label: 'Hiedberg Consultants',
         },
         {
           path: '/',
-          label: 'Privacy Policy',
+          label: 'Hiedberg Remote Workforce',
         },
         {
           path: '/',
-          label: 'Terms & Conditions',
+          label: 'Hiedberg Data Analytics',
         },
         {
           path: '/',
-          label: 'Site Map',
+          label: 'Hiedberg Business Insights',
         },
         {
           path: '/',
-          label: 'Store Hours',
+          label: 'Hiedberg Research',
         },
       ],
     },
     {
-      header: 'My Account',
+      header: 'Expertise',
       items: [
         {
           path: '/',
-          label: 'Press inquiries',
+          label: 'Project Management ',
         },
         {
           path: '/',
-          label: 'Social media ',
+          label: 'Pipeline & Project Analysis',
         },
         {
           path: '/',
-          label: 'directories',
+          label: 'Feasibility Studies',
         },
         {
           path: '/',
-          label: 'Images & B-roll',
+          label: 'Business Insights',
         },
         {
           path: '/',
-          label: 'Permissions',
+          label: 'Data Analytics',
+        },
+        {
+          path: '/',
+          label: 'Software Development',
+        },
+        {
+          path: '/',
+          label: 'Workshops',
         },
       ],
     },
     {
-      header: 'Policy',
+      header: 'Expertise',
       items: [
         {
           path: '/',
-          label: 'Application security',
+          label: 'Project Management ',
         },
         {
           path: '/',
-          label: 'Software principles',
+          label: 'Pipeline & Project Analysis',
         },
         {
           path: '/',
-          label: 'Unwanted software policy',
+          label: 'Feasibility Studies',
         },
         {
           path: '/',
-          label: 'Responsible supply chain',
+          label: 'Business Insights',
+        },
+        {
+          path: '/',
+          label: 'Data Analytics',
+        },
+        {
+          path: '/',
+          label: 'Software Development',
+        },
+        {
+          path: '/',
+          label: 'Workshops',
         },
       ],
-    },
+    }
   ];
   

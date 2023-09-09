@@ -1,9 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react';
-import {LiaPlaySolid} from 'react-icons/lia'
-import {AiOutlinePause} from 'react-icons/ai'
+import { LiaPlaySolid } from 'react-icons/lia';
+import { AiOutlinePause } from 'react-icons/ai';
+import { ImVolumeMute, ImVolumeMute2 } from 'react-icons/im';
+
 const VideoPlayer = () => {
   const videoRef = useRef(null);
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true); // Autoplay the video by default
+  const [muted, setMuted] = useState(true);
+
   useEffect(() => {
     const options = {
       root: null,
@@ -38,22 +42,31 @@ const VideoPlayer = () => {
     setPlaying(!playing);
   };
 
+  const toggleMute = () => {
+    videoRef.current.muted = !muted;
+    setMuted(!muted);
+  };
+
   return (
-    <div className="relative" style={{marginBottom:"40rem"}}>
-      <video
-        ref={videoRef}
-        className="w-full"
-        poster="/path-to-poster-image.jpg"
-      >
+    <div className="relative">
+      <video ref={videoRef} className="w-full" muted={muted} autoPlay>
         <source src="/assets/images/item5.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <div className="absolute top-4 right-4 z-10">
+        <button
+          onClick={toggleMute}
+          className="bg-transparent text-3xl font-extrabold text-white p-4 rounded-full hover:bg-transparent hover:text-white transition-colors duration-300"
+        >
+          {muted ? <ImVolumeMute2 /> : <ImVolumeMute />}
+        </button>
+      </div>
       <div className="absolute inset-0 flex items-center justify-center">
         <button
           onClick={toggleVideo}
           className="bg-transparent text-8xl font-extrabold text-white p-4 rounded-full hover:bg-transparent hover:text-white transition-colors duration-300"
         >
-          {playing ? <AiOutlinePause/> : <LiaPlaySolid/> }
+          {playing ? <AiOutlinePause /> : <LiaPlaySolid />}
         </button>
       </div>
     </div>
