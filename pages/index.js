@@ -11,9 +11,9 @@ export default function Home() {
         <>
           <Hero2/>
           <Experience/>
+          <SecurePayment page="home"/>
           <Projects/>
           <VideoPlayer/>
-          <SecurePayment/>
         </>
   )
 }

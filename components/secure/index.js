@@ -6,23 +6,24 @@ import Image from '../image';
 import theme from '../../theme';
 import { ThemeUIProvider } from 'theme-ui';
 const data = {
-  subTitle: 'PAYMENT SECURITY',
-  title: 'Secure Payment Transaction System with #1 Ranking',
+  subTitle: 'OUR COMMITMENT',
+  title: 'We strive to support data-driven decisions by providing accurate, actionable, and real-time insights for our clients & partners',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
-  btnName: 'Learn More',
+    'Our mission at Hiedberg is to empower organizations to succeed by providing world-class data analysis and business insights using innovative AI across all project management areas…',
+  btnName: 'Connect with us',
   btnURL: '#',
 };
 
-export default function SecurePayment() {
-const PaymentThumb = '/assets/paymentThumb.png'
+export default function SecurePayment({page}) {
+const PaymentThumb = '/assets/data_analytics.svg'
+const PaymentThumb2 = '/assets/data.svg'
   return (
     <ThemeUIProvider theme={theme}>
     <section sx={{ variant: 'section.securePayment' }}>
       <Box sx={styles.bgOverlay} />
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={PaymentThumb} alt={data.title} />
+          <Image src={page === 'about' ? PaymentThumb2 : PaymentThumb} alt={data.title} />
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature
@@ -56,7 +57,7 @@ const styles = {
       null,
       'calc(50% + 625px)',
     ],
-    backgroundImage: `url("/assets/bannerBg.png")`,
+    backgroundImage: `url("/assets/payment-pattern.png")`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: 'top left',
     backgroundSize: 'cover',
