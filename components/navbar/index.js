@@ -126,7 +126,7 @@ export default function Navbar() {
 
         {/* Button Section */}
         <div className="md:ml-4">
-            <ButtonWrapper text="Sign Up"/>
+            <ButtonWrapper text="Contact Us"/>
         </div>
       </div>
     </nav>

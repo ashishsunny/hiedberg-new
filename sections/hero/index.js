@@ -23,7 +23,7 @@ export default function Hero2() {
         <Container sx={styles.banner.container}>
           <Box sx={styles.banner.contentBox}>
             <Heading as="h1" variant="heroPrimary">
-            <TypewriterComponent text="Innovative ideas deserve a chance to reach their potential" />
+            <TypewriterComponent text="Innovative ideas deserve a chance to reach their potential..." />
             </Heading>
 
             <Text as="p" variant="heroSecondary">

@@ -6,6 +6,7 @@ import Experience from '../sections/experience'
 import Projects from '../components/projects'
 import VideoPlayer from '../components/video-player'
 import SecurePayment from '../components/secure'
+
 export default function Home() {
   return (
         <>

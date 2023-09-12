@@ -1,4 +1,4 @@
-import { FiSend } from "react-icons/fi";
+import { RiContactsLine } from "react-icons/ri";
 
 const ButtonWrapper = ({text}) => {
   return (
@@ -20,10 +20,10 @@ const NeumorphismButton = ({text}) => {
         transition-all
 
         hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)]
-        hover:text-[#1F3E76]
+        hover:text-[#6B7280]
     `}
     >
-      <FiSend />
+      <RiContactsLine/>
       <span>{text}</span>
     </button>
   );
