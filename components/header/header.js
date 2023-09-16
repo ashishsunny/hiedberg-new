@@ -7,6 +7,8 @@ import { DrawerProvider } from '../../contexts/drawer/drawer-provider';
 import MobileDrawer from './mobileDrawer';
 import menuItems from './header.data';
 import Link from 'next/link';
+import { ThemeUIProvider } from 'theme-ui';
+import theme from '../../theme';
 
 const LogoDark = require('../../public/assets/images/logo-blue-hiedberg.svg');
 const LogoWhite = require('../../public/assets/images/logo-white-hiedberg.svg');
@@ -14,6 +16,7 @@ const LogoWhite = require('../../public/assets/images/logo-white-hiedberg.svg');
 export default function Header({ className }) {
 
   return (
+    <ThemeUIProvider theme={theme}>
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
@@ -30,13 +33,14 @@ export default function Header({ className }) {
             variant="secondary"
             aria-label="Phone Us"
           >
-            Call Us
+            <Link href={"contact"}>Contact Us</Link>
           </Button>
 
           <MobileDrawer />
         </Container>
       </header>
     </DrawerProvider>
+    </ThemeUIProvider>
   );
 }
 

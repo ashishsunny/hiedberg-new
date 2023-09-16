@@ -10,10 +10,6 @@ export default [
   {
     path: 'remote',
     label: 'Remote',
-  },
-  {
-    path: 'contact',
-    label: 'Contact',
-  },
+  }
 ];
 
