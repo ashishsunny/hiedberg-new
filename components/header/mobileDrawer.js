@@ -5,7 +5,6 @@ import { DrawerContext } from '../../contexts/drawer/drawer-context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import Link from 'next/link';
 import { Link as Li } from 'react-scroll';
-import { Scrollbars } from 'react-custom-scrollbars';
 import {
   FaFacebookF,
   FaTwitter,
@@ -57,7 +56,6 @@ const MobileDrawer = () => {
       drawerStyle={styles.drawer}
       closeBtnStyle={styles.close}
     >
-      <Scrollbars autoHide>
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => (
@@ -75,7 +73,6 @@ const MobileDrawer = () => {
             </Box>
           </Box>
         </Box>
-        </Scrollbars>
     </Drawer>
   );
 };
