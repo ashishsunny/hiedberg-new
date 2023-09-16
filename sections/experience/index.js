@@ -1,12 +1,16 @@
+/** @jsxImportSource theme-ui */
 import Card from '../../components/card'
 import styles from './Experience.module.css'
 import Data from '../../data/data.experience'
+import {
+    Heading,
+  } from 'theme-ui'
 const Experience = () => {
     return ( 
         <div>
         {/* style={{ backgroundImage:"url(/assets/dot-pattern.svg)"}} */}
         <div className={styles.experience_container} >
-        <h1 className={styles.experience_heading}>Our Core Expertise</h1>
+        <Heading as="h1" variant="experiencesHeader">Our Core Expertise</Heading>
         <div className={styles.card_container}>
             {
                 Data.map((card)=>{

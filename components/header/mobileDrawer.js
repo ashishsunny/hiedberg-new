@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import React, { useContext } from 'react';
 import { Box } from 'theme-ui';
 import Drawer from '../../components/drawer';
@@ -8,28 +9,23 @@ import { Link as Li } from 'react-scroll';
 import {
   FaFacebookF,
   FaTwitter,
-  FaGithubAlt,
-  FaDribbble,
+  FaLinkedin,
 } from 'react-icons/fa';
 import menuItems from './header.data';
 
 const social = [
   {
-    path: '/',
+    path: '',
     icon: <FaFacebookF />,
   },
   {
-    path: '/',
+    path: '',
     icon: <FaTwitter />,
   },
   {
-    path: '/',
-    icon: <FaGithubAlt />,
-  },
-  {
-    path: '/',
-    icon: <FaDribbble />,
-  },
+    path: '',
+    icon: <FaLinkedin />,
+  }
 ];
 
 const MobileDrawer = () => {

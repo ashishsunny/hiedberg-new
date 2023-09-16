@@ -167,6 +167,23 @@ export default {
       pr: [0, null, null, null, null, '100px', null, '125px'],
       mb: ['35px', null, null, null, '40px', null, null, 7],
     },
+    experiencesHeader: {
+      color: '#0F2137',
+      fontSize: [
+        '30px',
+        '36px',
+        '40px',
+        '34px',
+        '36px',
+        '40px',
+        '42px',
+        '49px',
+      ],
+      lineHeight: 1.2,
+      fontWeight: 600,
+      mb: [7, null, null, null, '70px'],
+      mt: [7, null, null, null, '70px']
+    },
     title: {
       // extends the text.heading styles
       variant: 'text.heading',

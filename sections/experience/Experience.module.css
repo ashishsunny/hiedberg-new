@@ -1,6 +1,6 @@
 .experience_container {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
   }
 
   .card_container {
@@ -8,17 +8,26 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .card{
-    padding-left: 2.5rem;
-  }
 
   .experience_heading{
     margin-bottom: 3rem;
     font-size: 3rem;
     color: #171717;
   }
-  @media (max_width: 768px) {
+
+ 
+
+  @media (max_width: 1024px) {
     .card-container {
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
+    .card {
+      padding-left: 0;
+    }
+  }
+
+  .card {
+    margin-left: 1.5rem; /* Set the left padding to zero */
   }
