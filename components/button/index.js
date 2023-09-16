@@ -2,7 +2,7 @@ import { RiContactsLine } from "react-icons/ri";
 
 const ButtonWrapper = ({text}) => {
   return (
-    <div className="bg-white min-h-[20px] flex items-center justify-center">
+    <div className="bg-transparent min-h-[20px] flex items-center justify-center">
       <NeumorphismButton text={text} />
     </div>
   );
@@ -14,7 +14,7 @@ const NeumorphismButton = ({text}) => {
       className={`
         px-4 py-2 rounded-full 
         flex items-center gap-2 
-        text-slate-500
+        text-white
         shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)]
         
         transition-all

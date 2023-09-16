@@ -19,7 +19,7 @@ import TypewriterComponent from '../../components/typewriter'
 export default function Hero2() {
   return (
     <ThemeUIProvider theme={theme}>
-      <section sx={styles.banner} id="home">
+      <section sx={styles.banner}>
         <Container sx={styles.banner.container}>
           <Box sx={styles.banner.contentBox}>
             <Heading as="h1" variant="heroPrimary">

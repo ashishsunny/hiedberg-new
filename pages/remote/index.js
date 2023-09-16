@@ -5,13 +5,13 @@ import Working from '../../components/working'
 import CallUs from '../../components/call-us'
 const Remote = () => {
     return (
-    <>  
+    <div id="remote">  
         <Hero2/>
        <Services/>
        <Working/>
        <CallUs/>
        <Plans/>
-    </> 
+    </div> 
     
     );
 }

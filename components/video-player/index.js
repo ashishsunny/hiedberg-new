@@ -18,33 +18,50 @@ const VideoPlayer = () => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
       if (entry.isIntersecting) {
-        videoRef.current.play();
-        setPlaying(true);
+        if (videoRef.current) {
+          videoRef.current.play().then(() => {
+            setPlaying(true);
+          });
+        }
       } else {
-        videoRef.current.pause();
-        setPlaying(false);
+        if (videoRef.current) {
+          videoRef.current.pause();
+          setPlaying(false);
+        }
       }
     }, options);
 
-    observer.observe(videoRef.current);
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
 
     return () => {
-      observer.unobserve(videoRef.current);
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
     };
   }, []);
 
   const toggleVideo = () => {
     if (playing) {
-      videoRef.current.pause();
+      if (videoRef.current) {
+        videoRef.current.pause();
+        setPlaying(false);
+      }
     } else {
-      videoRef.current.play();
+      if (videoRef.current) {
+        videoRef.current.play().then(() => {
+          setPlaying(true);
+        });
+      }
     }
-    setPlaying(!playing);
   };
 
   const toggleMute = () => {
-    videoRef.current.muted = !muted;
-    setMuted(!muted);
+    if (videoRef.current) {
+      videoRef.current.muted = !muted;
+      setMuted(!muted);
+    }
   };
 
   return (
