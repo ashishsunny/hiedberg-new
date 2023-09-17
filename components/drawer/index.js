@@ -35,7 +35,7 @@ const MyDrawer = ({
             {closeButton}
           </Box>
         )}
-        <Box sx={drawerStyle}>{children}</Box>
+        <Box sx={drawerStyle} style={{background: "linear-gradient(to bottom, #E5F1FF, #fff)"}}>{children}</Box>
       </RcDrawer>
       <Box
         className="drawer__handler"

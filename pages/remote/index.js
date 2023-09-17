@@ -1,5 +1,5 @@
 import Services from '../../components/services'
-import Hero2 from '../../sections/hero'
+import Hero2 from '../../components/hero'
 import Plans from '../../components/plans'
 import Working from '../../components/working'
 import CallUs from '../../components/call-us'

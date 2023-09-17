@@ -55,7 +55,7 @@ const MobileDrawer = () => {
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => (
-              <Link href={path} onClick={toggleHandler} className="hover:text-[#6566E3]">{label}</Link>
+              <Link href={path} onClick={toggleHandler} className="hover:text-[##6566E3]">{label}</Link>
             ))}
           </Box>
 
@@ -89,7 +89,7 @@ const styles = {
   drawer: {
     width: '100%',
     height: '100%',
-    backgroundColor: 'light',
+    backgroundColor: 'dark',
   },
 
   close: {

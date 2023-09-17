@@ -6,8 +6,8 @@ import VideoPlayer from '../../components/video-player'
 const Projects = () => {
   return (
     <div style={{ background: "#041436"}}>
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-normal text-5xl" style={{color: "#f8f9fa"}}>
+      <div className="flex h-24 items-center justify-center">
+        <span className="font-normal text-5xl pt-10" style={{color: "#f8f9fa"}}>
           Our Projects
         </span>
       </div>
@@ -44,7 +44,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+      className="group rounded-[5%] relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
     >
       <div
         style={{
