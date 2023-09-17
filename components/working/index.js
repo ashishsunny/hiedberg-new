@@ -77,8 +77,6 @@ const styles = {
       content: '""',
       top: 0,
       right: 0,
-      background:
-        'linear-gradient(-45deg, rgba(42,72,125, 0.3) 25%, transparent 25%, transparent 50%, rgba(42,72,125, 0.3) 50%, rgba(42,72,125, 0.3) 75%, transparent 75%, transparent)',
       width: '100%',
       backgroundSize: '350px 350px',
       height: '100%',
@@ -153,7 +151,7 @@ const styles = {
     fontSize: [6, null, 7, null, null, '30px'],
     fontWeight: 700,
     justifyContent: 'center',
-    color: '#234582',
+    color: '#7070F5',
   },
   wrapper: {
     width: '100%',

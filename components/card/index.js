@@ -18,7 +18,7 @@ const Card = ({ id, title, description, text }) => {
         },
       }}
       className="relative mb-3
-       h-196 w-80 shrink-0 overflow-hidden rounded-xl bg-[#1F3E76] p-8"
+       h-196 w-80 shrink-0 overflow-hidden rounded-xl bg-[#04163D] p-8"
     >
       <div className="relative z-10 text-[#f8f9fa]">
         {id === 1 ? (<DiGoogleAnalytics className="text-[1.5rem]" />)
@@ -83,7 +83,7 @@ const Background = () => {
         cx="160.5"
         cy="114.5"
         r="101.5"
-        fill="#26447A"
+        fill="#031A4B"
       />
       <motion.ellipse
         variants={{
@@ -101,7 +101,7 @@ const Background = () => {
         cy="265.5"
         rx="101.5"
         ry="43.5"
-        fill="#26447A"
+        fill="#031A4B"
       />
     </motion.svg>
   )

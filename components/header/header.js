@@ -24,7 +24,7 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-              <Link href={path} className="hover:text-[#ee9b00] hover:underline">{label}</Link>
+              <Link href={path} className="hover:text-[#6566E3]">{label}</Link>
             ))}
           </Flex>
 
@@ -58,7 +58,7 @@ const positionAnim = keyframes`
 
 const styles = {
   header: {
-    color: 'white',
+    color: 'white', 
     fontWeight: 'normal',
     py: 4,
     width: '100%',

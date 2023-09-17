@@ -5,7 +5,7 @@ import VideoPlayer from '../../components/video-player'
 
 const Projects = () => {
   return (
-    <div className="bg-[#26447A]">
+    <div style={{ background: "#041436"}}>
       <div className="flex h-48 items-center justify-center">
         <span className="font-normal text-5xl" style={{color: "#f8f9fa"}}>
           Our Projects
@@ -28,7 +28,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-[#1F3E76]">
+    <section ref={targetRef} className="relative h-[300vh]" style={{ background: "linear-gradient(to bottom, #041436, #E5F1FF)"}}>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {Cards.map((card) => {

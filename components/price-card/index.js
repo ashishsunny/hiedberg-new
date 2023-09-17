@@ -74,7 +74,7 @@ const styles = {
       '0 1 40%',
       '0 1 38.5%',
     ],
-    background: '#2F5392',
+    background: '#031A4B',
     borderRadius: 10,
     ml: [0, null, null, 5],
     position: 'relative',
