@@ -12,7 +12,7 @@ const FooterLogo = require('../../public/assets/images/logo-blue-hiedberg.svg');
 export default function Footer() {
   return (
     <ThemeUIProvider theme={theme}>
-    <footer sx={styles.footer}>
+    <footer sx={styles.footer} style={{ background: "linear-gradient(to bottom, #E5F1FF, #fff)"}}>
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
           <Box sx={styles.copyrightArea}>
@@ -55,7 +55,6 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    backgroundColor: 'background_secondary',
     container: {
       width: '100%',
       alignItems: 'stretch',

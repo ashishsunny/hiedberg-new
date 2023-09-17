@@ -47,8 +47,8 @@ const HeaderBar = () => {
     <>
       <div className="absolute left-[50%] top-2.5 z-10 h-2 w-16 -translate-x-[50%] rounded-md bg-neutral-900"></div>
       <div className="absolute right-3 top-2 z-10 flex gap-2">
-        <FiWifi className="text-neutral-600" />
-        <FiBatteryCharging className="text-neutral-600" />
+        <FiWifi className="text-[#02073E]" />
+        <FiBatteryCharging className="text-[#02073E]" />
       </div>
     </>
   );
@@ -64,7 +64,7 @@ const Screen = () => {
       </button>
 
       {/* <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-violet-500" /> */}
-      <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-[#1F3E76]" />
+      <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-[#6C63FF]" />
     </div>
   );
 };

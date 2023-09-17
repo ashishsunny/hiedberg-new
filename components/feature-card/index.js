@@ -9,7 +9,7 @@ export default function FeatureCard({
 }) {
   return (
     <Box sx={styles.card}>
-      <Image src={src} alt={altText} sx={styles.img} style={{height:"4rem", backgroundColor:"#809bce", padding:"5% 3%", borderRadius:"10%;"}}/>
+      <Image src={src} alt={altText} sx={styles.img} style={{height:"4rem", backgroundColor:"#7070f5b8", padding:"5% 3%", borderRadius:"10%"}}/>
 
       <Box sx={styles.wrapper}>
         <Heading sx={styles.wrapper.title}>{title}</Heading>

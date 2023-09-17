@@ -10,7 +10,7 @@ const Experience = () => {
         <div>
         {/* style={{ backgroundImage:"url(/assets/dot-pattern.svg)"}} */}
         <div className={styles.experience_container} >
-        <Heading as="h1" variant="experiencesHeader">Our Core Expertise</Heading>
+        <Heading as="p" variant="experiencesHeader">Our Core Expertise</Heading>
         <div className={styles.card_container}>
             {
                 Data.map((card)=>{

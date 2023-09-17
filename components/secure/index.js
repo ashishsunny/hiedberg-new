@@ -10,7 +10,7 @@ const data = {
   title: 'We strive to support data-driven decisions by providing accurate, actionable, and real-time insights for our clients & partners',
   description:
     'Our mission at Hiedberg is to empower organizations to succeed by providing world-class data analysis and business insights using innovative AI across all project management areas…',
-  btnName: 'Connect with us',
+  btnName: '',
   btnURL: '#',
 };
 

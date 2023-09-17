@@ -55,7 +55,7 @@ const MobileDrawer = () => {
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => (
-              <Link href={path} onClick={toggleHandler} className="hover:text-[#ee9b00] hover:underline">{label}</Link>
+              <Link href={path} onClick={toggleHandler} className="hover:text-[##6566E3]">{label}</Link>
             ))}
           </Box>
 

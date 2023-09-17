@@ -1,4 +1,4 @@
-import Hero2 from '../../sections/hero'
+import Hero2 from '../../components/hero'
 import PartnerSection from '../../components/map';
 import SecurePayment from '../../components/secure'
 const About = () => {
