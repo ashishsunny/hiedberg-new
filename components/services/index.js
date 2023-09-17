@@ -1,8 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../../components/section-header';
-import theme from '../../theme';
-import { ThemeUIProvider } from 'theme-ui';
 import FeatureCard from '../../components/feature-card'
 
 
@@ -47,7 +45,6 @@ const data = [
 
 export default function Feature() {
   return (
-    <ThemeUIProvider theme={theme}>
     <section sx={{ variant: 'section.feature' }}>
       <Container>
         <SectionHeader
@@ -68,7 +65,6 @@ export default function Feature() {
         </Grid>
       </Container>
     </section>
-    </ThemeUIProvider>
   );
 }
 

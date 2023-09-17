@@ -2,8 +2,6 @@
 import { Container, Box } from 'theme-ui';
 import TextFeature2 from '../text-feature2';
 import Image from '../image';
-import theme from '@/theme';
-import { ThemeUIProvider } from 'theme-ui';
 import GoogleMapEmbed from '../location';
 
 
@@ -19,7 +17,6 @@ const data = {
 export default function PartnerSection() {
 const Partner = '/assets/partner.svg'
   return (
-    <ThemeUIProvider theme={theme}>
     <section sx={{ variant: 'section.partner' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
@@ -36,7 +33,6 @@ const Partner = '/assets/partner.svg'
         </Box>
       </Container>
     </section>
-    </ThemeUIProvider>
   );
 }
 

@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import Sticky from 'react-stickynode';
 import Header from '../header/header';
-import { ThemeUIProvider } from 'theme-ui';
 import Footer from '../../components/footer'
-import theme from '../../theme';
 import { StickyProvider } from '../../contexts/app/app.provider';
+import theme from '../../theme';
+import { ThemeUIProvider } from 'theme-ui';
 
 export default function Layout({ children }) {
   const [isSticky, setIsSticky] = useState(false);

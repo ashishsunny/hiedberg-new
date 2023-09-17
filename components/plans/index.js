@@ -3,8 +3,6 @@ import { Container, Flex } from 'theme-ui';
 import PriceCard from 'components/price-card';
 import SectionHeader from 'components/section-header';
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
-import theme from '../../theme';
-import { ThemeUIProvider } from 'theme-ui';
 
 const PatternBG = 'assets/patternBG.png';
 const packages = [
@@ -194,7 +192,6 @@ const packages = [
 ];
 export default function Plans() {
   return (
-    <ThemeUIProvider theme={theme}>
     <section id="pricing" sx={styles.pricing}>
       <Container>
         <SectionHeader
@@ -214,7 +211,6 @@ export default function Plans() {
         </Flex>
       </Container>
     </section>
-    </ThemeUIProvider>
   );
 }
 

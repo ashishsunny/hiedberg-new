@@ -3,15 +3,12 @@ import { Heading, Box, Text, Flex, Container } from 'theme-ui';
 import  {LinkA}  from '../../components/link';
 import Link from 'next/link';
 import menuItems from './footer.data';
-import { ThemeUIProvider } from 'theme-ui';
-import theme from '../../theme';
 import Logo from '../../components/logo';
 
 
 const FooterLogo = require('../../public/assets/images/logo-blue-hiedberg.svg');
 export default function Footer() {
   return (
-    <ThemeUIProvider theme={theme}>
     <footer sx={styles.footer} style={{ background: "linear-gradient(to bottom, #E5F1FF, #fff)"}}>
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
@@ -50,7 +47,6 @@ export default function Footer() {
         </Box>
       </Container>
     </footer>
-    </ThemeUIProvider>
   );
 }
 
