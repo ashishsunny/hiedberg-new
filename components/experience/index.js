@@ -2,14 +2,11 @@
 import Card from '../../components/card'
 import styles from './Experience.module.css'
 import Data from '../../data/data.experience'
-import theme from '@/theme';
-import { ThemeUIProvider } from 'theme-ui';
 import {
     Heading,
   } from 'theme-ui'
 const Experience = () => {
     return ( 
-        <ThemeUIProvider theme={theme}>
         <div>
         {/* style={{ backgroundImage:"url(/assets/dot-pattern.svg)"}} */}
         <div className={styles.experience_container} >
@@ -23,7 +20,6 @@ const Experience = () => {
         </div>
       </div>
       </div>
-      </ThemeUIProvider>
      );
 }
 

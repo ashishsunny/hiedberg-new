@@ -2,8 +2,6 @@
 import { Container, Box } from 'theme-ui';
 import TextFeature2 from '../../components/text-feature2';
 import Image from '../../components/image';
-import theme from '@/theme';
-import { ThemeUIProvider } from 'theme-ui';
 
 
 const data = {
@@ -17,7 +15,6 @@ const data = {
 export default function PartnerSection() {
 const Partner = '/assets/partner.svg'
   return (
-    <ThemeUIProvider theme={theme}>
     <section sx={{ variant: 'section.partner' }} style={{ backgroundImage:"url(/assets/bannerBg.png)"}}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
@@ -34,7 +31,6 @@ const Partner = '/assets/partner.svg'
         </Box>
       </Container>
     </section>
-    </ThemeUIProvider>
   );
 }
 

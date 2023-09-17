@@ -1,7 +1,5 @@
 /** @jsxImportSource theme-ui */
 import { Container, Box, Heading, Button } from 'theme-ui';
-import theme from '../../theme';
-import { ThemeUIProvider } from 'theme-ui';
 
 const BgShape = 'assets/shape-1.svg';
 const btnShapeTop = 'assets/btn-shape-top.svg';
@@ -9,7 +7,6 @@ const btnShapeBottom = 'assets/btn-shape-bottom.svg';
 
 export default function CallUs() {
   return (
-    <ThemeUIProvider theme={theme}>
     <div sx={styles.wrapper}>
       <Container sx={styles.container}>
         <Box sx={styles.contentBox}>
@@ -24,7 +21,6 @@ export default function CallUs() {
         </Box>
       </Container>
     </div>
-    </ThemeUIProvider>
   );
 }
 

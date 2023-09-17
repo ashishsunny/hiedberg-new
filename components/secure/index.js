@@ -3,8 +3,6 @@ import { jsx } from 'theme-ui';
 import { Container, Box } from 'theme-ui';
 import TextFeature from '../text-feature';
 import Image from '../image';
-import theme from '../../theme';
-import { ThemeUIProvider } from 'theme-ui';
 const data = {
   subTitle: 'OUR COMMITMENT',
   title: 'We strive to support data-driven decisions by providing accurate, actionable, and real-time insights for our clients & partners',
@@ -18,7 +16,6 @@ export default function SecurePayment({page}) {
 const PaymentThumb = '/assets/data_analytics.svg'
 const PaymentThumb2 = '/assets/data.svg'
   return (
-    <ThemeUIProvider theme={theme}>
     <section sx={{ variant: 'section.securePayment' }}>
       <Box sx={styles.bgOverlay} />
       <Container sx={styles.containerBox}>
@@ -36,7 +33,6 @@ const PaymentThumb2 = '/assets/data.svg'
         </Box>
       </Container>
     </section>
-    </ThemeUIProvider>
   );
 }
 

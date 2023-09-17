@@ -1,8 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { Container, Grid, Box, Heading, Text } from 'theme-ui';
 import SectionHeader from '../../components/section-header';
-import theme from '../../theme';
-import { ThemeUIProvider } from 'theme-ui';
 
 const PatternBG = 'assets/patternBG.png';
 const ArrowOdd = 'assets/arrowOdd.png';
@@ -37,7 +35,7 @@ const data = [
 
 export default function Working() {
   return (
-    <ThemeUIProvider theme={theme}>
+  
     <section sx={styles.workflow} style={{background: "linear-gradient(to bottom, #20355f, #041436)"}}>
       <Container>
         <SectionHeader
@@ -58,7 +56,6 @@ export default function Working() {
         </Grid>
       </Container>
     </section>
-    </ThemeUIProvider>
   );
 }
 

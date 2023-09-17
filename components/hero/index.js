@@ -10,15 +10,12 @@ import {
   Text,
   Button,
 } from 'theme-ui'
-import { ThemeUIProvider } from 'theme-ui'
-import theme from '../../theme'
 import Phone from '../../components/phone'
 import TypewriterComponent from '../../components/typewriter'
 
 
 export default function Hero2() {
   return (
-    <ThemeUIProvider theme={theme}>
       <section sx={styles.banner}>
         <Container sx={styles.banner.container}>
           <Box sx={styles.banner.contentBox}>
@@ -45,7 +42,6 @@ export default function Hero2() {
           </Box>
         </Container>
       </section>
-    </ThemeUIProvider>
   )
 }
 

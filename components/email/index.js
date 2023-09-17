@@ -1,11 +1,8 @@
 /** @jsxImportSource theme-ui */
 import { Container, Flex, Box, Button, Input, Text, Heading } from 'theme-ui';
-import { ThemeUIProvider } from 'theme-ui';
-import theme from '../../theme';
 export default function Email() {
 
   return (
-    <ThemeUIProvider theme={theme}>
     <section>
       <Container>
         <Box sx={styles.contentBox}>
@@ -40,7 +37,6 @@ export default function Email() {
         </Box>
       </Container>
     </section>
-    </ThemeUIProvider>
   );
 }
 
