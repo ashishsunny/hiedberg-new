@@ -20,7 +20,8 @@ export default function Footer() {
               <Logo src={FooterLogo} />
             </Box>
             <nav className="footer__menu">
-              <LinkA path="/" label="Copyright ©2023 Hiedberg Consulting" />
+              <LinkA path="/" label="Copyright ©2023" />
+              <LinkA path="/" label="Hiedberg Consulting" />
             </nav>
             <Text as="p" sx={styles.copyrightArea.copyright}>
             Website Developed by ashishsunny.dev
