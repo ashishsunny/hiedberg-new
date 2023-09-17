@@ -55,5 +55,14 @@ const styles = {
     '.description': {
       pr: [0, null, null, null, 4],
     },
+    subTitle: {
+      fontSize: [0, null, '12px'],
+      color: 'heading',
+      letterSpacing: '2px',
+      textTransform: 'uppercase',
+      fontWeight: '700',
+      mb: [2, null, null, null, 3],
+      lineHeight: 1.5,
+    },
   },
 };

@@ -38,7 +38,7 @@ const data = [
 export default function Working() {
   return (
     <ThemeUIProvider theme={theme}>
-    <section sx={styles.workflow}>
+    <section sx={styles.workflow} style={{background: "linear-gradient(to bottom, #20355f, #041436)"}}>
       <Container>
         <SectionHeader
           title="How it works?"
@@ -65,7 +65,7 @@ export default function Working() {
 const styles = {
   workflow: {
     backgroundColor: 'primary',
-    backgroundImage: `url(${PatternBG})`,
+    // backgroundImage: `url(${PatternBG})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
