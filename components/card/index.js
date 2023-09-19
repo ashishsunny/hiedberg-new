@@ -17,7 +17,7 @@ const Card = ({ id, title, description, text }) => {
           scale: 1.02,
         },
       }}
-      className="relative mb-3
+      className="relative mb-3 sm:mr-0 lg:mr-10 md:mr-5
        h-196 w-80 shrink-0 overflow-hidden rounded-xl p-8"
        style={{background:"linear-gradient(to bottom, #041436, #20355f)"}}
     >

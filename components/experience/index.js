@@ -28,10 +28,9 @@ const style={
         fontSize: [5, null, '30px'],
         color: 'primary',
         letterSpacing: '1px',
-        textTransform: 'uppercase',
         fontWeight: '700',
         mb: [6, null, null, null, 8],
-        mt: [8, null, null, null, 10],
+        mt: [6, null, null, null, 8],
         lineHeight: 1.5,
       }
 }
